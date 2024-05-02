@@ -1,9 +1,9 @@
-.contenedor-principal {
+.contenedorPrincipal {
     display:flexbox; /* Asegúrate de usar flexbox */
     justify-content: space-between; /* Controla el espacio entre contenedores si es necesario */
-    align-items:stretch;
-    background-color: darkslateblue;
-    padding-top: 10px;
+    align-items:center;
+    
+    
 }
 
 body{
@@ -15,9 +15,9 @@ body{
     background-color: black;
 }
 .contenedor{
-    height: 50vh;
-    width: 50vh;
-    display: grid;
+    height: 305px;
+    width: 230px;
+    display:flex;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
@@ -34,6 +34,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .tarjeta::before{
     content: "";
@@ -56,11 +57,13 @@ body{
 }
 /*SOBRE MI*/
 .contenedorSoMi{
-    height: 20vh;
-    width: 120vh;
-    display: grid;
+   /* height: 20vh;
+    width: 120vh;*/
+    height: 150px;
+    width: 1160px;
+    display: flex;
     align-items:center;
-    justify-content:left;
+    justify-content: center;
     padding-top: 10px;
 }
 .tarjetaSoMi{
@@ -102,6 +105,53 @@ body{
     font-size: larger;
     position: relative;
     display:inline;
+}
+
+/*HARD SKILLS*/
+.contenedorHS{
+    height: 80px;
+    width: 80px;
+    display: inline;
+    align-items:center;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+.tarjetaHS{
+    height: 110px;
+    width: 110px;
+    background-color: #101010;
+    border-radius: 3em;
+    box-shadow: 16px 14px 20px #0000008c;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.tarjetaHS::before{
+    content: "";
+    
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-image: conic-gradient(aqua, 20deg, transparent 120deg);
+    animation: rodear 3s linear infinite;
+    z-index: 15;
+}
+.tarjetaHS::after{
+    
+    
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #101010;
+    border-radius: 3em;
+    z-index: 50;
 }
 /*HEADER*/
 header{

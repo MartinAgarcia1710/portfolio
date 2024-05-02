@@ -1,0 +1,137 @@
+.contenedor-principal {
+    display:flexbox; /* Asegúrate de usar flexbox */
+    justify-content: space-between; /* Controla el espacio entre contenedores si es necesario */
+    align-items:stretch;
+    background-color: darkslateblue;
+    padding-top: 10px;
+}
+
+body{
+    background-color:grey;
+}
+
+/*FOTO PERSONAL*/
+#Conocimientos{
+    background-color: black;
+}
+.contenedor{
+    height: 50vh;
+    width: 50vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
+.tarjeta{
+    height: 305px;
+    width: 230px;
+    background-color: #101010;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #0000008c;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tarjeta::before{
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-image: conic-gradient(aqua, 20deg, transparent 120deg);
+    animation: rodear 2s linear infinite;
+    z-index: 0;
+
+}
+
+@keyframes rodear{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+/*SOBRE MI*/
+.contenedorSoMi{
+    height: 20vh;
+    width: 120vh;
+    display: grid;
+    align-items:center;
+    justify-content:left;
+    padding-top: 10px;
+}
+.tarjetaSoMi{
+    height: 150px;
+    width: 1160px;
+    background-color: #101010;
+    border-radius: 3em;
+    box-shadow: 16px 14px 20px #0000008c;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.tarjetaSoMi::before{
+    content: "";
+    position: absolute;
+    height: 3000px;
+    width: 3000px;
+    background-image: conic-gradient(aqua, 20deg, transparent 120deg);
+    animation: rodear 3s linear infinite;
+    z-index: 15;
+}
+.tarjetaSoMi::after{
+    content: "";
+    position: absolute;
+    height: 140px;
+    width: 1150px;
+    background-color: #101010;
+    border-radius: 3em;
+    z-index: 50;
+}
+.somi{
+    color: aqua;
+    z-index: 100;
+    background-color: transparent;
+    text-align: center;
+    font-size: larger;
+    position: relative;
+    display:inline;
+}
+/*HEADER*/
+header{
+    background-color: black;
+    color: aqua;
+    font-size: large;
+    
+    padding: 2%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+h1{
+    color: white;
+}
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: white;
+    text-decoration:overline;
+}
+a:hover{
+    color: aqua;
+}

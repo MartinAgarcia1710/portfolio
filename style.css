@@ -319,3 +319,39 @@ a:hover{
     padding: 10px;
 }
 
+.contForm{
+    padding-top: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:lightblue;
+}
+form{
+    padding: 50px 55px;
+    background-color: darkslategrey;
+    box-shadow: 0 0 20px black;
+    border-radius: 10%;
+    text-align: center;
+    width: 350px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+label{
+    margin-bottom: 15px;
+}
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.boton{
+    background-color: blue;
+    cursor: pointer;
+    color: aqua;
+    box-shadow: 0 0 20px aqua;
+    border: 0;
+}

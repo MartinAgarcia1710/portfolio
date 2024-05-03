@@ -276,27 +276,38 @@
                 <h2 style="z-index: 1000; color: aqua;">Contacto</h2>
             </div>
         </div>
-        <div>
+
+        <div class="contForm">
+
+            <form action="https://formsubmit.co/martindlcg@gmail.com" method="POST">
+                <div class="input">
+                <label for="nom">Nombre</label>
+                <input type="text" name="nombre" id="nom" placeholder="Nombre">
+
+                <label for="tel">Teléfono</label>
+                <input type="tel" name="telefono" id="tel" placeholder="Teléfono">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                
+                <label for="mens">Mensaje</label>
+                <textarea name="mens" id="mens" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                
+                <input class="boton" type="submit" value="Enviar">
+
+            </div>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+            <input type="hidden" name="_captcha" value="false">
+
+
             
-            <label for=""> Nombre</label>
-            <input type="text"> 
-        </div>
-        <div>
-            <label for=""> E-mail</label>
-            <input type="text"> 
-        </div>
-        <div>
-            <label for="">Comentarios</label>
-            <input type="text">
-        </div>
-        <div>
-            <button>Enviar</button>
-        </div>
+        </form>
+    </div>
+        
     </body>
 
-    <footer>
-
-    </footer>
+   
 
 
 </html>

@@ -1,26 +1,119 @@
-.contenedorPrincipal {
-    display:flexbox; /* Asegúrate de usar flexbox */
-    justify-content: space-between; /* Controla el espacio entre contenedores si es necesario */
-    align-items:center;
-    
-    
+body{
+    background-color:darkslategrey;
 }
 
-body{
-    background-color:grey;
+/*MENU*/
+a{
+    color: white; 
+}
+a:hover{
+    color: aqua;
+}
+.contenedorMenu{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color:lightblue;
+    
+}
+.contenedorINme{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
+.tarjetaMenu{
+    height: 110px;
+    width: 110px;
+    background-color: #101010;
+    border-radius: 3em;
+    box-shadow: 16px 14px 20px #0000008c;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.tarjetaMenu::before{
+    content: "";
+    
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    background-image: conic-gradient(blue, 20deg, transparent 120deg);
+    animation: rodear 3s linear infinite;
+    z-index: 15;
+}
+.tarjetaMenu::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #101010;
+    border-radius: 3em;
+    z-index: 50;
+}
+
+.contenedorSecciones{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.tarjetaTitSeccion{
+    height: 110px;
+    width: 300px;
+    
+    background-color: #101010;
+    border-radius: 3em;
+    box-shadow: 16px 14px 20px #0000008c;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.tarjetaTitSeccion::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 290px;
+    
+    background-color: #101010;
+    border-radius: 3em;
+    z-index: 50;
+}
+.tarjetaTitSeccion::before{
+    content: "";
+    position: absolute;
+    height: 320px;
+    width: 500px;
+    background-image: conic-gradient(aqua, 20deg, transparent 120deg);
+    animation: rodear 3s linear infinite;
+    z-index: 15;
+}
+.contenedorPrincipal {
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;    
+    background-color:lightblue;
+    padding-bottom: 50px;
 }
 
 /*FOTO PERSONAL*/
-#Conocimientos{
-    background-color: black;
-}
+
 .contenedor{
     height: 305px;
     width: 230px;
-    display:flex;
+    width: 30vh;
+    display:inline-block;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 100px;
+    padding-left: 400px;
     
 }
 .tarjeta{
@@ -60,15 +153,17 @@ body{
    /* height: 20vh;
     width: 120vh;*/
     height: 150px;
-    width: 1160px;
-    display: flex;
+    width: 730px;
+    width: 100vh;
+    display: inline-block;
     align-items:center;
     justify-content: center;
-    padding-top: 10px;
+    padding-right: 200px;
+    
 }
 .tarjetaSoMi{
-    height: 150px;
-    width: 1160px;
+    height: 210px;
+    width: 720px;
     background-color: #101010;
     border-radius: 3em;
     box-shadow: 16px 14px 20px #0000008c;
@@ -91,8 +186,8 @@ body{
 .tarjetaSoMi::after{
     content: "";
     position: absolute;
-    height: 140px;
-    width: 1150px;
+    height: 200px;
+    width: 710px;
     background-color: #101010;
     border-radius: 3em;
     z-index: 50;
@@ -109,15 +204,21 @@ body{
 
 /*HARD SKILLS*/
 .contenedorHS{
-    height: 80px;
-    width: 80px;
-    display: inline;
-    align-items:center;
-    justify-content: center;
-    padding-top: 10px;
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color:lightblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 }
 
+.contendorHSinterno{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
 .tarjetaHS{
     height: 110px;
     width: 110px;
@@ -126,18 +227,19 @@ body{
     box-shadow: 16px 14px 20px #0000008c;
     position: relative;
     overflow: hidden;
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 0;
+    
 }
 
 .tarjetaHS::before{
     content: "";
     
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 120px;
+    width: 120px;
     background-image: conic-gradient(aqua, 20deg, transparent 120deg);
     animation: rodear 3s linear infinite;
     z-index: 15;
@@ -153,35 +255,67 @@ body{
     border-radius: 3em;
     z-index: 50;
 }
-/*HEADER*/
-header{
-    background-color: black;
-    color: aqua;
-    font-size: large;
-    
-    padding: 2%;
-}
-nav{
-    display: flex;
+
+.contenedorSS{
+    display:flex;
+    justify-content: space-between; 
     align-items: center;
-    justify-content: space-between;
-    padding-top: 2px;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-weight: bold;
-}
-h1{
-    color: white;
-}
-ul li{
-    display: inline-block;
-    padding: 0px 20px;
+    background-color:lightblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-a{
-    color: white;
-    text-decoration:overline;
+.contendorINss{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
 }
-a:hover{
-    color: aqua;
+
+.tarjetaSS{
+    height: 110px;
+    width: 110px;
+    background-color: #101010;
+    border-radius: 3em;
+    box-shadow: 16px 14px 20px #0000008c;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
 }
+.tarjetaSS::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: #101010;
+    border-radius: 3em;
+    z-index: 50;
+}
+.tarjetaSS::before{
+    content: "";
+    
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    background-image: conic-gradient(aqua, 20deg, transparent 120deg);
+    animation: rodear 3s linear infinite;
+    z-index: 15;
+}
+.contenedorProy{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color:lightblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contenedorINpro{
+    display:flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
+

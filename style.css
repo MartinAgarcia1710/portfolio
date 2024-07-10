@@ -359,3 +359,22 @@ input, textarea{
 #img{
     box-shadow: 0 0 40px blue;
 }
+@media (max-width: 768px) {
+    .contenedorMenu, .contenedorSecciones, .contenedorPrincipal, .contenedorProy, .contenedorHS, .contenedorSS, .contenedorRS {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedorINme, .contenedorSoMi, .contenedorESinterno, .contendorHSinterno, .contenedorINss, .contenedorINrs, .contenedorPryinterno {
+        width: 90%;
+    }
+
+    .tarjetaMenu a {
+        padding: 5px 10px;
+    }
+
+    .tarjeta img {
+        width: 150px;
+        height: auto;
+    }
+}
